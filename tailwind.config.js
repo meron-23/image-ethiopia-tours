@@ -11,11 +11,21 @@ export default {
     extend: {
       // Custom colors for your brand
       colors: {
-        primary: '#007bff', // A vibrant blue, common for primary CTAs
-        secondary: '#6c757d', // A muted grey, good for secondary actions or text
-        accent: '#ffc107', // A warm yellow/orange, for highlights
-        darkBg: '#222', // Dark background for footer/newsletter
-        lightBg: '#f9f9f9', // Light background for sections
+       primary: '#0D4740',
+
+        // Secondary brand gold (main buttons, primary text highlights)
+        secondary: '#C9B07E',
+
+        // Accent brand gold (lighter highlights, hover states, secondary text)
+        accent: '#E1CEAA',
+
+        // Light background for content areas (for contrast with dark primary)
+        lightBg: '#F5F5F5',
+
+        // Remap existing generic dark/light background names to new theme colors
+        // This makes it easier to replace throughout your components
+        darkBg: '#0D4740', // Your main dark green
+        
       },
       // Custom keyframes for animations
       keyframes: {

@@ -26,7 +26,7 @@ const Inspiration = () => {
                   {item.title}
                 </h3>
                 <p className="text-gray-700 text-sm mb-4">{item.description}</p>
-                <span className="btn btn-secondary w-full inline-block text-center bg-accent text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition-colors duration-300 shadow-md">
+                <span className="btn btn-secondary w-full inline-block text-center bg-accent text-white px-6 py-3 rounded-lg hover:bg-secondary transition-colors duration-300 shadow-md">
                   Discover More
                 </span>
               </div>

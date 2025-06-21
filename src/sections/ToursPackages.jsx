@@ -39,7 +39,7 @@ const ToursPackages = () => {
                 <p className="text-gray-700 text-sm mb-4">{tour.summary}</p> {/* Use tour.summary */}
                 <Link
                   to={`/tours/${tour.id}`} // Link to the specific tour detail page
-                  className="btn btn-secondary w-full inline-block text-center bg-accent text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition-colors duration-300 shadow-md"
+                  className="btn btn-primary w-full inline-block text-center bg-accent text-white px-6 py-3 rounded-lg hover:bg-accent transition-colors duration-300 shadow-md"
                 >
                   View Details
                 </Link>
@@ -50,7 +50,7 @@ const ToursPackages = () => {
         <div className="text-center mt-12">
           <Link
             to="/tours-packages"
-            className="inline-block bg-accent text-white text-lg font-semibold px-8 py-3 rounded-lg hover:bg-orange-600 transition-colors duration-300 shadow-md">
+            className="inline-block bg-primary text-white text-lg font-semibold px-8 py-3 rounded-lg hover:bg-accent transition-colors duration-300 shadow-md">
             View All Tours & Packages
           </Link>
         </div>

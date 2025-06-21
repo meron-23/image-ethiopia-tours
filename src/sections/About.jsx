@@ -1,5 +1,5 @@
 import React from 'react';
-import EthiopiaAbout from '../assets/ethiopia_about.jpg';
+import EthiopiaAbout from '../assets/about_new.jpg';
 import { Link } from 'react-router-dom';
 
 const About = () => {

@@ -117,7 +117,7 @@ const EthiopiaPage = () => {
                     <p className="text-gray-700 mb-4 flex-grow">{tour.summary}</p>
                     <Link
                       to={`/tours/${tour.id}`}
-                      className="mt-auto bg-accent text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition-colors duration-300 self-start text-center"
+                      className="mt-auto bg-primary text-white px-6 py-3 rounded-lg hover:bg-accent transition-colors duration-300 self-start text-center"
                     >
                       View Details
                     </Link>

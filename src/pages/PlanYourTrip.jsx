@@ -103,13 +103,13 @@ const PlanYourTrip = () => {
           summary="Booking your dream tour with Image Ethiopia Tours is simple and straightforward. We offer personalized consultation to craft an itinerary that perfectly matches your interests and budget."
         >
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Detailed Steps:**
+            <strong>Detailed Steps:</strong>
             <ol className="list-decimal list-inside pl-4 mt-2">
-              <li>**Browse & Inquire:** Explore our website for tour ideas or tell us your vision. Fill out our inquiry form or send us an email.</li>
-              <li>**Consultation:** Our travel experts will contact you to discuss your preferences, dates, and any special requests.</li>
-              <li>**Custom Itinerary & Quote:** We'll design a detailed itinerary with a transparent quote. We're happy to revise until it's perfect.</li>
-              <li>**Confirmation & Payment:** Once satisfied, confirm your booking with a deposit. We'll provide all necessary documentation.</li>
-              <li>**Pre-Departure Support:** Receive a comprehensive pre-departure guide with essential tips. We're here for any last-minute questions!</li>
+              <li><strong>Browse & Inquire:</strong> Explore our website for tour ideas or tell us your vision. Fill out our inquiry form or send us an email.</li>
+              <li><strong>Consultation:</strong> Our travel experts will contact you to discuss your preferences, dates, and any special requests.</li>
+              <li><strong>Custom Itinerary & Quote:</strong> We'll design a detailed itinerary with a transparent quote. We're happy to revise until it's perfect.</li>
+              <li><strong>Confirmation & Payment:</strong> Once satisfied, confirm your booking with a deposit. We'll provide all necessary documentation.</li>
+              <li><strong>Pre-Departure Support:</strong> Receive a comprehensive pre-departure guide with essential tips. We're here for any last-minute questions!</li>
             </ol>
           </p>
         </CollapsibleSection>
@@ -120,13 +120,13 @@ const PlanYourTrip = () => {
           summary="Visa regulations vary by nationality for Ethiopia and other East African countries (Kenya, Tanzania, Uganda, Rwanda). It's crucial to check specific requirements well in advance of your trip."
         >
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Ethiopia:** Most visitors require a visa. An e-Visa (online application) is generally available and recommended for tourists entering through Addis Ababa Bole International Airport. Some nationalities may be eligible for visa-on-arrival. Always check the official Ethiopian Immigration website.
+            <strong>Ethiopia:</strong> Most visitors require a visa. An e-Visa (online application) is generally available and recommended for tourists entering through Addis Ababa Bole International Airport. Some nationalities may be eligible for visa-on-arrival. Always check the official Ethiopian Immigration website.
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Kenya/Tanzania/Uganda/Rwanda:** The East African Tourist Visa covers Kenya, Uganda, and Rwanda for a single entry. Tanzania requires a separate visa. E-Visas are common and highly recommended for these countries too.
+            <strong>Kenya/Tanzania/Uganda/Rwanda:</strong> The East African Tourist Visa covers Kenya, Uganda, and Rwanda for a single entry. Tanzania requires a separate visa. E-Visas are common and highly recommended for these countries too.
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Important:** Passport validity (usually 6 months beyond intended stay), sufficient blank pages, and sometimes onward tickets are required. Always consult the official embassy/consulate websites for the most up-to-date information for your specific nationality.
+            <strong>Important:</strong> Passport validity (usually 6 months beyond intended stay), sufficient blank pages, and sometimes onward tickets are required. Always consult the official embassy/consulate websites for the most up-to-date information for your specific nationality.
           </p>
         </CollapsibleSection>
 
@@ -136,13 +136,13 @@ const PlanYourTrip = () => {
           summary="Your tour package will cover most of your ground and internal air transportation. For independent travel, options include domestic flights, private cars, buses, and public transport."
         >
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Internal Flights:** For covering long distances quickly, especially between major cities or to remote attractions (like Lalibela or Omo Valley), internal flights are the most efficient. Ethiopian Airlines has an extensive domestic network.
+            <strong>Internal Flights:</strong> For covering long distances quickly, especially between major cities or to remote attractions (like Lalibela or Omo Valley), internal flights are the most efficient. Ethiopian Airlines has an extensive domestic network.
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Road Travel:** For safaris and exploring rural areas, 4x4 vehicles are standard. Roads vary in quality. Within cities, taxis, ride-hailing apps (like Feres, Ride in Ethiopia; Uber, Bolt in Kenya), and tuk-tuks (bajaj) are common.
+            <strong>Road Travel:</strong> For safaris and exploring rural areas, 4x4 vehicles are standard. Roads vary in quality. Within cities, taxis, ride-hailing apps (like Feres, Ride in Ethiopia; Uber, Bolt in Kenya), and tuk-tuks (bajaj) are common.
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Guided Tours:** For seamless travel, especially to remote or culturally sensitive areas, our guided tours provide dedicated transportation with experienced drivers, ensuring comfort and safety.
+            <strong>Guided Tours:</strong> For seamless travel, especially to remote or culturally sensitive areas, our guided tours provide dedicated transportation with experienced drivers, ensuring comfort and safety.
           </p>
         </CollapsibleSection>
 
@@ -152,16 +152,16 @@ const PlanYourTrip = () => {
           summary="East Africa offers a wide range of accommodation, from luxury lodges and international hotels to charming guesthouses and rustic eco-camps, catering to every budget and preference."
         >
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Luxury & Boutique:** High-end hotels in major cities and exclusive safari lodges/tented camps offering unparalleled service, gourmet dining, and prime locations for wildlife viewing.
+            <strong>Luxury & Boutique:</strong> High-end hotels in major cities and exclusive safari lodges/tented camps offering unparalleled service, gourmet dining, and prime locations for wildlife viewing.
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Mid-Range:** Comfortable hotels with good amenities, often locally owned, providing a balance of comfort and authenticity.
+            <strong>Mid-Range:</strong> Comfortable hotels with good amenities, often locally owned, providing a balance of comfort and authenticity.
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Budget-Friendly:** Guesthouses, hostels, and basic hotels are available for those on a tighter budget, offering clean and safe stays.
+            <strong>Budget-Friendly:</strong> Guesthouses, hostels, and basic hotels are available for those on a tighter budget, offering clean and safe stays.
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Specialty Stays:** Unique options include traditional tukuls (circular huts) in cultural villages, eco-lodges, and even houseboat stays on lakes.
+            <strong>Specialty Stays:</strong> Unique options include traditional tukuls (circular huts) in cultural villages, eco-lodges, and even houseboat stays on lakes.
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
             Our tours customize accommodation based on your chosen package level and preferences.
@@ -174,19 +174,19 @@ const PlanYourTrip = () => {
           summary="Packing smartly for East Africa involves considering diverse climates, cultural sensitivities, and activity types (safari, trekking, city exploration)."
         >
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Clothing:** Lightweight, breathable fabrics (cotton, linen) in neutral colors for safaris (avoid brights and dark blues which attract tsetse flies). Long sleeves and trousers for sun protection and insect bite prevention. A warm jacket/fleece for cool evenings or high altitudes. Modest clothing (shoulders/knees covered) for cultural/religious sites.
+            <strong>Clothing:</strong> Lightweight, breathable fabrics (cotton, linen) in neutral colors for safaris (avoid brights and dark blues which attract tsetse flies). Long sleeves and trousers for sun protection and insect bite prevention. A warm jacket/fleece for cool evenings or high altitudes. Modest clothing (shoulders/knees covered) for cultural/religious sites.
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Footwear:** Comfortable walking shoes/hiking boots (broken in!), sandals/flip-flops.
+            <strong>Footwear:</strong> Comfortable walking shoes/hiking boots (broken in!), sandals/flip-flops.
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Essentials:** Sunscreen (high SPF!), wide-brimmed hat, sunglasses, insect repellent (DEET recommended), personal first-aid kit, hand sanitizer, rehydration salts, camera with extra batteries/memory, power bank.
+            <strong>Essentials:</strong> Sunscreen (high SPF!), wide-brimmed hat, sunglasses, insect repellent (DEET recommended), personal first-aid kit, hand sanitizer, rehydration salts, camera with extra batteries/memory, power bank.
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Documentation:** Passport, visas, flight tickets, travel insurance details, photocopies of important documents (keep separate).
+            <strong>Documentation:</strong> Passport, visas, flight tickets, travel insurance details, photocopies of important documents (keep separate).
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Luggage:** Soft-sided bags are often preferred for safaris (especially light aircraft flights).
+            <strong>Luggage:</strong> Soft-sided bags are often preferred for safaris (especially light aircraft flights).
           </p>
         </CollapsibleSection>
 
@@ -196,22 +196,22 @@ const PlanYourTrip = () => {
           summary="Your health and safety are paramount. Consult your doctor well before traveling regarding vaccinations and malaria prophylaxis. Be aware of local conditions and take standard precautions."
         >
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Vaccinations:** Recommended vaccinations typically include Yellow Fever (often mandatory for entry, especially if arriving from an endemic country), Hepatitis A & B, Typhoid, Tetanus, Diphtheria, Measles, Mumps, Rubella. Consult a travel clinic.
+            <strong>Vaccinations:</strong> Recommended vaccinations typically include Yellow Fever (often mandatory for entry, especially if arriving from an endemic country), Hepatitis A & B, Typhoid, Tetanus, Diphtheria, Measles, Mumps, Rubella. Consult a travel clinic.
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Malaria:** Malaria is present in many areas. Discuss prophylaxis with your doctor. Use insect repellent, sleep under mosquito nets, and wear long sleeves/trousers at dusk/dawn.
+            <strong>Malaria:</strong> Malaria is present in many areas. Discuss prophylaxis with your doctor. Use insect repellent, sleep under mosquito nets, and wear long sleeves/trousers at dusk/dawn.
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Food & Water Safety:** Drink only bottled or purified water. Avoid ice cubes, uncooked foods (unless peeled by you), and street food (unless you see it cooked fresh and hot).
+            <strong>Food & Water Safety:</strong> Drink only bottled or purified water. Avoid ice cubes, uncooked foods (unless peeled by you), and street food (unless you see it cooked fresh and hot).
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Altitude Sickness:** If visiting high-altitude areas (e.g., Simien Mountains), be aware of symptoms and acclimatize gradually.
+            <strong>Altitude Sickness:</strong> If visiting high-altitude areas (e.g., Simien Mountains), be aware of symptoms and acclimatize gradually.
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Personal Safety:** Be aware of your surroundings, especially in crowded areas. Avoid displaying valuables. Use reputable transport. Follow your guide's advice. Travel insurance is highly recommended.
+            <strong>Personal Safety:</strong> Be aware of your surroundings, especially in crowded areas. Avoid displaying valuables. Use reputable transport. Follow your guide's advice. Travel insurance is highly recommended.
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Emergency Contacts:** Keep local embassy/consulate and tour operator contact details accessible.
+            <strong>Emergency Contacts:</strong> Keep local embassy/consulate and tour operator contact details accessible.
           </p>
         </CollapsibleSection>
 
@@ -221,22 +221,22 @@ const PlanYourTrip = () => {
           summary="Your health and safety are paramount. Consult your doctor well before traveling regarding vaccinations and malaria prophylaxis. Be aware of local conditions and take standard precautions."
         >
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Vaccinations:** Recommended vaccinations typically include Yellow Fever (often mandatory for entry, especially if arriving from an endemic country), Hepatitis A & B, Typhoid, Tetanus, Diphtheria, Measles, Mumps, Rubella. Consult a travel clinic.
+            <strong>Vaccinations:</strong> Recommended vaccinations typically include Yellow Fever (often mandatory for entry, especially if arriving from an endemic country), Hepatitis A & B, Typhoid, Tetanus, Diphtheria, Measles, Mumps, Rubella. Consult a travel clinic.
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Malaria:** Malaria is present in many areas. Discuss prophylaxis with your doctor. Use insect repellent, sleep under mosquito nets, and wear long sleeves/trousers at dusk/dawn.
+            <strong>Malaria:</strong> Malaria is present in many areas. Discuss prophylaxis with your doctor. Use insect repellent, sleep under mosquito nets, and wear long sleeves/trousers at dusk/dawn.
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Food & Water Safety:** Drink only bottled or purified water. Avoid ice cubes, uncooked foods (unless peeled by you), and street food (unless you see it cooked fresh and hot).
+            <strong>Food & Water Safety:</strong> Drink only bottled or purified water. Avoid ice cubes, uncooked foods (unless peeled by you), and street food (unless you see it cooked fresh and hot).
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Altitude Sickness:** If visiting high-altitude areas (e.g., Simien Mountains), be aware of symptoms and acclimatize gradually.
+            <strong>Altitude Sickness:</strong> If visiting high-altitude areas (e.g., Simien Mountains), be aware of symptoms and acclimatize gradually.
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Personal Safety:** Be aware of your surroundings, especially in crowded areas. Avoid displaying valuables. Use reputable transport. Follow your guide's advice. Travel insurance is highly recommended.
+            <strong>Personal Safety:</strong> Be aware of your surroundings, especially in crowded areas. Avoid displaying valuables. Use reputable transport. Follow your guide's advice. Travel insurance is highly recommended.
           </p>
           <p className="text-gray-700 leading-relaxed space-y-4">
-            **Emergency Contacts:** Keep local embassy/consulate and tour operator contact details accessible.
+            <strong>Emergency Contacts:</strong> Keep local embassy/consulate and tour operator contact details accessible.
           </p>
         </CollapsibleSection>
 

@@ -1,11 +1,11 @@
 import React from 'react';
-import howToBook from '../assets/how_to_book.png';
-import visaAndEntry from '../assets/visa_and_entry.png';
-import gettingArround from '../assets/getting_arround.png';
-import accomodation from '../assets/accomodation.png';
-import packing from '../assets/packing.png';
-import healthAndSafety from '../assets/health_and_safety.png';
-import responsibleTravel from '../assets/responsible_travel.png';
+import howToBook from '../assets/PlanYourTrip/how_to_book.png';
+import visaAndEntry from '../assets/PlanYourTrip/visa.png';
+import gettingArround from '../assets/PlanYourTrip/transport.png';
+import accomodation from '../assets/PlanYourTrip/hotel.png';
+import packing from '../assets/PlanYourTrip/packing.png';
+import healthAndSafety from '../assets/PlanYourTrip/health_and_safety.png';
+import responsibleTravel from '../assets/PlanYourTrip/responsible_tourism.png';
 import { Link } from 'react-router-dom';
 
 
@@ -79,7 +79,7 @@ const PlanYourTrip = () => {
               <p className="text-gray-700 mb-4">{item.description}</p>
               <Link
               to={item.link} // Link to specific ID on PlanYourTrip page
-              className="inline-block bg-primary text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+              className="inline-block bg-primary text-white px-5 py-2 rounded-lg hover:bg-accent transition-colors duration-300">
               Read More
             </Link>
             </div>

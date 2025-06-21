@@ -11,16 +11,15 @@ const ToursPackages = () => {
     <div className="bg-lightBg">
       {/* Tours & Packages Page Banner Section */}
       <section
-        className="relative h-80 flex items-center justify-center text-center text-white overflow-hidden
-                   filter saturate-125 contrast-105"
+        className="relative h-96 flex items-center justify-center text-center overflow-hidden"
         style={{ backgroundImage: `url('${toursPackagesBannerImage}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 p-6 max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-xl">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-xl text-white">
             Our Exciting Tours & Packages
           </h1>
-          <p className="mt-4 text-lg sm:text-xl">
+          <p className="mt-4 text-lg sm:text-xl text-white">
             Discover your next adventure across Ethiopia and East Africa!
           </p>
         </div>
@@ -55,7 +54,7 @@ const ToursPackages = () => {
                 {/* CHANGED: Use Link to navigate to the dynamic tour detail page */}
                 <Link
                   to={`/tours/${tour.id}`} // Dynamic path based on tour.id
-                  className="mt-auto bg-accent text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition-colors duration-300 self-start text-center"
+                  className="mt-auto bg-primary text-white px-6 py-3 rounded-lg hover:bg-accent transition-colors duration-300 self-start text-center"
                 >
                   View Details
                 </Link>

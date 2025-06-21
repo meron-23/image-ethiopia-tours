@@ -2,7 +2,11 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import blogBannerImg from '../../assets/inspiration/tour_blog.jpg'; // Adjust path
+// Import blog data
+import blogData from '../../data/blogData'; // <-- Import blogData
+
+// Import the banner image for this page
+import blogBannerImg from '../../assets/banners/blog_banner.jpg'; // Adjust path (consider moving to src/assets/banners)
 
 const BlogPage = () => {
   useEffect(() => {
@@ -10,17 +14,17 @@ const BlogPage = () => {
   }, []);
 
   return (
-    <div className="bg-lightBg">
+    <div className="bg-lightBg min-h-screen"> {/* Added min-h-screen for better layout */}
       <section
-        className="relative h-96 flex items-center justify-center text-center text-white overflow-hidden"
+        className="relative h-96 flex items-center justify-center text-center overflow-hidden"
         style={{ backgroundImage: `url('${blogBannerImg}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
-        <div className="absolute inset-0 bg-black opacity-60"></div>
+        <div className="absolute inset-0 bg-primary opacity-70"></div> {/* Use primary green with opacity */}
         <div className="relative z-10 p-6 max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-xl mb-2">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-xl mb-2 text-secondary"> {/* Gold text */}
             Travel Stories & Blog
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl font-semibold">
+          <p className="text-lg sm:text-xl md:text-2xl font-semibold text-accent"> {/* Lighter gold text */}
             Dive into captivating narratives and cultural insights from our journeys.
           </p>
         </div>
@@ -37,35 +41,35 @@ const BlogPage = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-darkBg mb-8 text-center">Our Latest Stories</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Placeholder Blog Post Card 1 */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <img src="https://via.placeholder.com/400x250?text=Blog+Post+1" alt="Blog Post 1" className="w-full h-48 object-cover" />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">A Week in the Simien Mountains</h3>
-              <p className="text-gray-700 text-sm mb-4">An exhilarating account of trekking through Ethiopia's stunning Simien Mountains, encountering Gelada baboons and breathtaking views.</p>
-              <Link to="#" className="text-accent hover:underline text-sm font-semibold">Read Full Story &rarr;</Link>
+          {blogData.map((post) => ( // <-- Map through blogData
+            <div key={post.id} className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl">
+              <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-darkBg mb-2">{post.title}</h3> {/* Use darkBg for text on white card */}
+                <p className="text-gray-700 text-sm mb-4">{post.description}</p>
+                <div className="flex justify-between items-center text-sm text-gray-500 mb-4">
+                  <span>By {post.author}</span>
+                  <span>{post.date}</span>
+                </div>
+                {/* Link to individual blog post, currently placeholder # */}
+                <Link to={post.route} className="text-secondary hover:text-accent hover:underline text-sm font-semibold flex items-center"> {/* Updated link colors */}
+                  Read Full Story &nbsp; &rarr;
+                </Link>
+              </div>
             </div>
-          </div>
-          {/* Placeholder Blog Post Card 2 */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <img src="https://via.placeholder.com/400x250?text=Blog+Post+2" alt="Blog Post 2" className="w-full h-48 object-cover" />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">Meeting the Tribes of Omo Valley</h3>
-              <p className="text-gray-700 text-sm mb-4">A profound cultural immersion exploring the unique traditions and daily lives of indigenous communities in Southern Ethiopia.</p>
-              <Link to="#" className="text-accent hover:underline text-sm font-semibold">Read Full Story &rarr;</Link>
-            </div>
-          </div>
-          {/* Placeholder Blog Post Card 3 */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <img src="https://via.placeholder.com/400x250?text=Blog+Post+3" alt="Blog Post 3" className="w-full h-48 object-cover" />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">Safari Thrills in the Maasai Mara</h3>
-              <p className="text-gray-700 text-sm mb-4">Recounting thrilling encounters with the Big Five and the epic spectacle of the Great Migration in Kenya.</p>
-              <Link to="#" className="text-accent hover:underline text-sm font-semibold">Read Full Story &rarr;</Link>
-            </div>
-          </div>
+          ))}
         </div>
+
         {/* You can add more blog posts or a pagination here */}
+
+        <div className="text-center mt-16">
+          <Link
+            to="/inspiration"
+            className="btn bg-primary text-secondary text-xl px-8 py-4 shadow-lg hover:bg-secondary hover:text-primary transition-all duration-300 transform hover:scale-105"
+          >
+            Back to Inspiration Overview
+          </Link>
+        </div>
       </div>
     </div>
   );
