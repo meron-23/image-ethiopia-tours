@@ -51,7 +51,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
-          <img src={companyLogo} alt="Company Logo" className="h-10" />
+          <img src={companyLogo} alt="Company Logo" className="h-10 rounded" />
           <span className="text-2xl font-bold text-white">Image Ethiopia Tours</span>
         </Link>
 
